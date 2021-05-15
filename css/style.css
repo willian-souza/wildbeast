@@ -17,7 +17,7 @@ a{
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -293,6 +293,14 @@ p{
     border-top: 2px solid #B07DFB;
 }
 
+@media (max-width: 600px){
+    .content{
+        grid-template-columns:  auto;
+        
+    }
+}
+
+
 /*--Anuncio--*/
 .ad{
     grid-area: adverts;
@@ -301,7 +309,10 @@ p{
     align-content: start;
     padding: 30px;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+
 
 
 /*--Footer--*/
